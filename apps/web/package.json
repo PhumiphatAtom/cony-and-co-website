@@ -10,9 +10,11 @@
   },
   "dependencies": {
     "@cony-co/shared": "workspace:*",
+    "clsx": "^2",
     "next": "^15",
     "react": "^19",
-    "react-dom": "^19"
+    "react-dom": "^19",
+    "tailwind-merge": "^2"
   },
   "devDependencies": {
     "@types/node": "^22",

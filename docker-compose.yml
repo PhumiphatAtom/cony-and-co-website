@@ -1,0 +1,15 @@
+services:
+  postgres:
+    image: postgres:16-alpine
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: user
+      POSTGRES_PASSWORD: password
+      POSTGRES_DB: cony_co
+    ports:
+      - '${DB_PORT:-5432}:5432'
+    volumes:
+      - cony_co_postgres_data:/var/lib/postgresql/data
+
+volumes:
+  cony_co_postgres_data:

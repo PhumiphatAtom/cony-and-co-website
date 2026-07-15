@@ -1,0 +1,30 @@
+# Dependencies
+node_modules/
+
+# Environment — never commit real secrets
+.env*
+!.env.example
+!apps/**/.env.example
+!packages/**/.env.example
+
+# Next.js
+.next/
+out/
+
+# Build output
+dist/
+*.tsbuildinfo
+
+# pnpm
+.pnpm-store/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+npm-debug.log*
+
+# Editor
+.idea/
